@@ -137,5 +137,6 @@ Pod::Spec.new do |s|
     s.dependency "OBGoodsDetailServiceProtocol"
     s.dependency "OBConfimOrderServiceProtocol"
     s.dependency "OBGoodsDetail"
+    s.dependency "OBConfirmOrder"
 
 end
