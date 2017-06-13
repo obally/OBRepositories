@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   s.prefix_header_file = 'WristBand/SYWristband/PrefixHeader.pch'
   s.framework = 'MobileCoreServices', 'CoreGraphics','CoreBluetooth'
   s.vendored_libraries = "WristBand/SYWristband/WristbandComponent/libs/libSharkeySDKWithiOS.a"
-  s.resource  = "WristBand/SYWristband/WristbandComponent/Source/Model.xcdatamodeld"
-  s.resources  = "WristBand/SYWristband/WristbandComponent/Source/wristBandImage.xcassets/**/*.png"
+# s.resource  = "WristBand/SYWristband/WristbandComponent/Source/Model.xcdatamodeld"
+  s.resources  = "WristBand/SYWristband/WristbandComponent/Source/wristBandImage.xcassets/**/*.png","WristBand/SYWristband/WristbandComponent/Source/Model.xcdatamodeld"
 s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
   s.dependency 'MagicalRecord'
   s.dependency 'OBBase'
