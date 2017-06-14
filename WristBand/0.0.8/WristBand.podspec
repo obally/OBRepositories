@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'WristBand/SYWristband/WristbandComponent/WristbandModule/*.h','WristBand/SYWristband/WristbandComponent/libs/WCDSharkeyFunction.h'
 # s.resource  = "WristBand/SYWristband/WristbandComponent/Source/Model.xcdatamodeld"
   s.resources  = "WristBand/SYWristband/WristbandComponent/Source/wristBandImage.xcassets/**/*.png","WristBand/SYWristband/WristbandComponent/Source/Model.xcdatamodeld"
-  s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
+  s.xcconfig = {'ARCHS'=>'armv7,arm64','VALID_ARCHS'=>'armv7,armv7s,arm64'}
   s.dependency 'MagicalRecord'
   s.dependency 'OBBase'
 end
